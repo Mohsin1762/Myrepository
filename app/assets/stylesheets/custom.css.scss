@@ -1,2 +1,83 @@
+
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar{
+  background-color: #000000;
+  l {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }li {
+    float: left;
+  }
+
+  a {
+    display: block;
+    padding: 14px;
+
+  }
+  li {
+    border-right: 3px solid #bbb;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+}
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+
+}
+
+#logo:hover{
+  color: #08088A;
+  text-decoration: none;
+  background-color: #08088A;
+}
+.center{
+  text-align: center;
+}
+
+
+.jumbotron{
+  background-image: asset-url('animals.jpg');
+  background-size: cover;
+  height: 550px;
+
+}
+.btn-xlarge{
+  font-size: 1.7em;
+  background-color: black;
+
+}
+
+jumbotron h1{
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
