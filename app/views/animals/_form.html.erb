@@ -1,7 +1,14 @@
-<%= form_with(model: animal, local: true) do |form| %>
+<%= form_with(model: animal, local: true, ) do |form| %>
   <% if animal.errors.any? %>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+
     <div id="error_explanation">
-      <h2><%= pluralize(animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
+      <h2 class="panel-title"><%= pluralize(animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
+      <div class="panel-body">
+
 
       <ul>
       <% animal.errors.full_messages.each do |message| %>
@@ -9,19 +16,54 @@
       <% end %>
       </ul>
     </div>
+    </div>
+          </div>
+        </div>
+      </div>
   <% end %>
 
+
+
+  <div class="forn-horizontal", role=form">
+<div class='row'>
+  <div class='col-xs-12'>
   <div class="field">
+
+    <div class ='form-group'>
+      <div class='control-label col-sm-3'>
+
+
     <%= form.label :name %>
-    <%= form.text_field :name %>
+      </div>
+
+      <div class='col-sm-8'>
+
+    <%= form.text_field :name, class:"form-control",placeholder:"Name of Animal",autofocus:false %>
+      </div>
+    </div>
   </div>
 
   <div class="field">
+
+    <div class ='form-group'>
+      <div class='control-label col-sm-3'>
+
     <%= form.label :description %>
-    <%= form.text_area :description %>
+      </div>
+
+      <div class='col-sm-8'>
+    <%= form.text_area :description,rows:5 ,class:"form-control",placeholder:"Description of Animal"%>
+  </div>
+    </div>
+
+
+<div class="form-group">
+  <div class="col-sm-10">
+  <div class="actions">
+    <%= form.submit  class:"btn btn-primary btn-lg"%>
+  </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+</div>
+</div>
 <% end %>
