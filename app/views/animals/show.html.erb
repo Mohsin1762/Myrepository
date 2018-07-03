@@ -1,14 +1,24 @@
-<p id="notice"><%= notice %></p>
+<h2 align = "center"><strong>  < Animal > </strong></h2>
 
 <p>
+
+  <h2 align="center">
   <strong>Name:</strong>
   <%= @animal.name %>
+  </h2>
 </p>
 
-<p>
+<div class description="well col-xs-8 col-xs-offset-2">
+  <hr align="center">
   <strong>Description:</strong>
+    <hr>
   <%= @animal.description %>
-</p>
+  </hr>
+  <hr></hr>
+  </h4>
+  <div class="name-actions">
 
-<%= link_to 'Edit', edit_animal_path(@animal) %> |
-<%= link_to 'Back', animals_path %>
+<%= link_to 'Edit Animals', edit_animal_path(@animal),class:"btn btn-xs btn-primary" %>
+<%= link_to 'View all animals', animals_path,class:"btn btn-xs btn-success" %>
+  </div>
+</div>
