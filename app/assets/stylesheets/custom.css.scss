@@ -5,10 +5,10 @@
 @import "bootstrap";
 
 .navbar{
-  background-color: #000000;
-  l {
+  background-color: black;
+  li{
     list-style-type: none;
-    margin: 0;
+    margin: 1px;
     padding: 2px;
     overflow: hidden;
     background-color: #333;
@@ -38,8 +38,14 @@
   }
 
   li:last-child {
-    border-right: none;
+    border-right: 0px;
   }
+}
+
+
+.Search-box{
+  padding-top: 8px;
+  padding-right: 14px;
 }
 
 .name-actions{
@@ -69,6 +75,16 @@
 }
 .center{
   text-align: center;
+}
+
+.animal-name{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.animal-body{
+  border-top:1px solid #eaeaea ;
+  padding-top:15px;
+  padding-bottom: 15px;
 }
 
 
