@@ -1,1 +1,1 @@
-THIS IS MY FIRST TEST APPLICATION ON RAILS : CREATIVE CHAOS : 
+Animal WebApp Dictionary on Ruby on Rails
